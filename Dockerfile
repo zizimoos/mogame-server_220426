@@ -1,5 +1,6 @@
 FROM node:latest
-WORKDIR /home
+WORKDIR /home 
+# create home directory
 COPY package*.json /home
 RUN npm install
 COPY . /home

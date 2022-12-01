@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 
 const server = http.createServer(app);
 server.listen(PORT, () => {
-  console.log("✅ Server listening on port 3003");
+  console.log(` ✅  Server listening on port ${PORT}`);
 });
 const io = new Server(server, {
   cors: {
